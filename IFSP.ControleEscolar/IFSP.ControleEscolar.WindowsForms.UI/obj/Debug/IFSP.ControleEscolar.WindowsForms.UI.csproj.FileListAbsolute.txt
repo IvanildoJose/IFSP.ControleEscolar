@@ -1,0 +1,3 @@
+C:\Users\Henrique\documents\visual studio 2013\Projects\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\documents\visual studio 2013\Projects\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.Properties.Resources.resources
+C:\Users\Henrique\documents\visual studio 2013\Projects\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.csproj.GenerateResource.Cache
