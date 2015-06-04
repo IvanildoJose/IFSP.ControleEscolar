@@ -16,5 +16,26 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
         {
             InitializeComponent();
         }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {            
+            FormLogin frmLogin = new FormLogin();
+            frmLogin.ShowDialog();
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Sistema de Controle Escolar\n" +
+                "\n-----------------------------------" +
+                "\n\nDesenvolvedores: " +
+                "\n\nAline Oshiro" +
+                "\nHenrique Fernandes" +
+                "\nIvanilvo Junior" +
+                "\n-----------------------------------\n" +
+                "\n\nA5LP1 - Copy Right and Left 2015 - " + DateTime.Now.Year,
+                "Sobre o Sistema de Controle Escolar"
+                );
+        }
     }
 }

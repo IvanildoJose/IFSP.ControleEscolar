@@ -42,7 +42,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
         {
             MySqlConnection objConexao = Conectar();
             camandoSql.Connection = objConexao;
-            MySqlDataReader dr = new MySqlDataReader();
+            MySqlDataReader dr = null; //new MySqlDataReader();
             return dr;
         }
     }
