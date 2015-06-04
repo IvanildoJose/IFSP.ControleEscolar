@@ -1,15 +1,3 @@
 C:\Users\Henrique\documents\visual studio 2013\Projects\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.csprojResolveAssemblyReference.cache
 C:\Users\Henrique\documents\visual studio 2013\Projects\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.Properties.Resources.resources
 C:\Users\Henrique\documents\visual studio 2013\Projects\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.csproj.GenerateResource.Cache
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\bin\Debug\IFSP.ControleEscolar.WindowsForms.UI.exe.config
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\bin\Debug\IFSP.ControleEscolar.WindowsForms.UI.exe
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\bin\Debug\IFSP.ControleEscolar.WindowsForms.UI.pdb
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\bin\Debug\IFSP.ControleEscolar.ClassLibrary.Core.dll
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\bin\Debug\IFSP.ControleEscolar.ClassLibrary.Core.pdb
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.csprojResolveAssemblyReference.cache
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.FormLogin.resources
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.FormPrincipal.resources
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.Properties.Resources.resources
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.csproj.GenerateResource.Cache
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.exe
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.pdb

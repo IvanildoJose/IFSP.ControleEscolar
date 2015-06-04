@@ -1,9 +1,1 @@
 C:\Users\Henrique\documents\visual studio 2013\Projects\IFSP.ControleEscolar\IFSP.ControleEscolar.Console.Testes\obj\Debug\IFSP.ControleEscolar.Console.Testes.csprojResolveAssemblyReference.cache
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.Console.Testes\bin\Debug\IFSP.ControleEscolar.Console.Testes.exe.config
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.Console.Testes\bin\Debug\IFSP.ControleEscolar.Console.Testes.exe
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.Console.Testes\bin\Debug\IFSP.ControleEscolar.Console.Testes.pdb
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.Console.Testes\bin\Debug\IFSP.ControleEscolar.ClassLibrary.Core.dll
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.Console.Testes\bin\Debug\IFSP.ControleEscolar.ClassLibrary.Core.pdb
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.Console.Testes\obj\Debug\IFSP.ControleEscolar.Console.Testes.csprojResolveAssemblyReference.cache
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.Console.Testes\obj\Debug\IFSP.ControleEscolar.Console.Testes.exe
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.Console.Testes\obj\Debug\IFSP.ControleEscolar.Console.Testes.pdb

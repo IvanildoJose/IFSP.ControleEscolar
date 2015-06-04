@@ -18,7 +18,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
             String servidor = "127.0.0.1";
             String usuario = "root";
             String senha = ""; // Altere para sua senha
-            String banco = "bd_agenda";
+            String banco = "banco_escolar";
 
             String stringDeConexao = String.Format(
                 "server={0};uid={1};pwd={2};database={3};",

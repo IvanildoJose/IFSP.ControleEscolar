@@ -1,6 +1,1 @@
 C:\Users\Henrique\documents\visual studio 2013\Projects\IFSP.ControleEscolar\IFSP.ControleEscolar.ClassLibrary.Core\obj\Debug\IFSP.ControleEscolar.ClassLibrary.Core.csprojResolveAssemblyReference.cache
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.ClassLibrary.Core\bin\Debug\IFSP.ControleEscolar.ClassLibrary.Core.dll
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.ClassLibrary.Core\bin\Debug\IFSP.ControleEscolar.ClassLibrary.Core.pdb
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.ClassLibrary.Core\obj\Debug\IFSP.ControleEscolar.ClassLibrary.Core.csprojResolveAssemblyReference.cache
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.ClassLibrary.Core\obj\Debug\IFSP.ControleEscolar.ClassLibrary.Core.dll
-C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.ClassLibrary.Core\obj\Debug\IFSP.ControleEscolar.ClassLibrary.Core.pdb
