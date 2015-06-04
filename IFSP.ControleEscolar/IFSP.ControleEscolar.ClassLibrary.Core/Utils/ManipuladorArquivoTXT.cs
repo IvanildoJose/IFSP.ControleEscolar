@@ -46,7 +46,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.Utils
                         aluno.Endereco = registros[3];
                         aluno.CPF = registros[4];
                         aluno.Telefone = registros[5];
-                        aluno.IdCurso = Convert.ToInt32(registros[6]);
+                        // aluno.IdCurso = Convert.ToInt32(registros[6]);
 
                         alunos.Add(aluno);
                     }

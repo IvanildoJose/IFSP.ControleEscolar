@@ -57,7 +57,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.Utils
                     escritor.WriteElementString("endereco", aluno.Endereco);
                     escritor.WriteElementString("cpf", aluno.CPF);
                     escritor.WriteElementString("telefone", aluno.Telefone);
-                    escritor.WriteElementString("idcurso", aluno.IdCurso.ToString());
+                    //escritor.WriteElementString("idcurso", aluno.IdCurso.ToString());
 
                     // Fechando o elemento 
                     escritor.WriteEndElement();
