@@ -24,7 +24,7 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();            
         }
     }
 }

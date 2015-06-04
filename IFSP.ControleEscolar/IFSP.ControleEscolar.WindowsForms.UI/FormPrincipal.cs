@@ -8,19 +8,34 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//
+using IFSP.ControleEscolar.ClassLibrary.Core.Models;
+
 namespace IFSP.ControleEscolar.WindowsForms.UI
 {
     public partial class FormPrincipal : Form
     {
+        public DateTime HorarioDoLogin { get; set; }
+        public Login usuarioLogado{get; set; }
+
         public FormPrincipal()
         {
             InitializeComponent();
+
+            this.HorarioDoLogin = new DateTime();
+            this.usuarioLogado = new Login();
         }
 
         private void FormPrincipal_Load(object sender, EventArgs e)
-        {            
+        {
             FormLogin frmLogin = new FormLogin();
             frmLogin.ShowDialog();
+
+            this.tslNomeUsuarioLogado.Text = this.usuarioLogado.Nome;
+            this.HorarioDoLogin = DateTime.Now;
+            this.tslHorarioEntradaSistema.Text += HorarioDoLogin.ToString();
+
+            this.stpBarradeStatus.Visible = true;
         }
 
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,5 +52,21 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
                 "Sobre o Sistema de Controle Escolar"
                 );
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult sair = MessageBox.Show(
+                "Deseja realmente ir embora do sistema?",
+                "Confirmação...",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+                );
+
+            if (sair == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
+
 }
