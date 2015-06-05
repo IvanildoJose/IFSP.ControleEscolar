@@ -1,9 +1,11 @@
+CREATE DATABASE banco_escolar;
+
 -- phpMyAdmin SQL Dump
 -- version 4.1.14
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 05-Jun-2015 às 03:03
+-- Generation Time: 05-Jun-2015 às 22:38
 -- Versão do servidor: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -16,7 +18,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
 
-CREATE DATABASE banco_escolar;
 --
 -- Database: `banco_escolar`
 --
@@ -114,13 +115,13 @@ CREATE TABLE IF NOT EXISTS `tbl_disciplina_has_tbl_professor` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_funcionario` (
-  `fun_id` int(11) NOT NULL,
+  `fun_id` int(11) NOT NULL AUTO_INCREMENT,
   `fun_nome` varchar(100) DEFAULT NULL,
   `fun_matricula` varchar(10) DEFAULT NULL,
   `tbl_login_log_login` varchar(15) NOT NULL,
   PRIMARY KEY (`fun_id`,`tbl_login_log_login`),
   KEY `fk_tbl_funcionario_tbl_login1_idx` (`tbl_login_log_login`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 -- --------------------------------------------------------
 
@@ -141,7 +142,7 @@ CREATE TABLE IF NOT EXISTS `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`log_login`, `log_nome`, `log_senha`, `log_poderes`) VALUES
-('henrique', 'Henrique Fernandes', '1234567', 'ADM');
+('admin', 'admin', 'admin', 'ADM');
 
 -- --------------------------------------------------------
 
@@ -229,8 +230,8 @@ ALTER TABLE `tbl_professor`
 -- Limitadores para a tabela `tbl_turma_has_tbl_disciplina`
 --
 ALTER TABLE `tbl_turma_has_tbl_disciplina`
-  ADD CONSTRAINT `fk_tbl_turma_has_tbl_disciplina_tbl_turma1` FOREIGN KEY (`tbl_turma_tur_id`) REFERENCES `tbl_turma` (`tur_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_tbl_turma_has_tbl_disciplina_tbl_disciplina1` FOREIGN KEY (`tbl_disciplina_dis_id`) REFERENCES `tbl_disciplina` (`dis_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_tbl_turma_has_tbl_disciplina_tbl_disciplina1` FOREIGN KEY (`tbl_disciplina_dis_id`) REFERENCES `tbl_disciplina` (`dis_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_tbl_turma_has_tbl_disciplina_tbl_turma1` FOREIGN KEY (`tbl_turma_tur_id`) REFERENCES `tbl_turma` (`tur_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

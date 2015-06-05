@@ -24,10 +24,12 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
 
             this.HorarioDoLogin = new DateTime();
             this.usuarioLogado = new Login();
+            // this.Hide();
         }
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
+            // this.Hide();
             FormLogin frmLogin = new FormLogin(this);
             frmLogin.ShowDialog();
 

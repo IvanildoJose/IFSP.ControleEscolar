@@ -45,6 +45,7 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
                 
                 this.Close();
                 ((FormPrincipal)form).usuarioLogado = login;
+                // form.Show();
             }
             catch (Exception erro)
             {

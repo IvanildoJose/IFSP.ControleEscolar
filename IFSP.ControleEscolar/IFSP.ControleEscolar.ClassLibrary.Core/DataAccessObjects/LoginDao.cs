@@ -23,10 +23,10 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
                 "INSERT INTO tbl_login(log_login, log_nome, log_senha, log_poderes)" +
                 "VALUES (@log_login, @log_nome, @log_senha, @log_poderes)";
 
-            comando.Parameters.AddWithValue("log_login", obj.LoginNome);
-            comando.Parameters.AddWithValue("log_nome", obj.Nome);
-            comando.Parameters.AddWithValue("log_senha", obj.Senha);
-            comando.Parameters.AddWithValue("log_poderes", obj.Poderes);
+            comando.Parameters.AddWithValue("@log_login", obj.LoginNome);
+            comando.Parameters.AddWithValue("@log_nome", obj.Nome);
+            comando.Parameters.AddWithValue("@log_senha", obj.Senha);
+            comando.Parameters.AddWithValue("@log_poderes", obj.Poderes);
 
             MysqlConexao.ComandoCRUD(comando);
         }
