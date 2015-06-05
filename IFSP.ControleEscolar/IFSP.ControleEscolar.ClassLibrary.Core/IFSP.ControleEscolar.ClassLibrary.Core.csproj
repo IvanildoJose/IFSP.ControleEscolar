@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessObjects\IDao.cs" />
+    <Compile Include="DataAccessObjects\LoginDao.cs" />
     <Compile Include="DataAccessObjects\MysqlConexao.cs" />
     <Compile Include="Models\Aluno.cs" />
     <Compile Include="Models\AlunoTurma.cs" />

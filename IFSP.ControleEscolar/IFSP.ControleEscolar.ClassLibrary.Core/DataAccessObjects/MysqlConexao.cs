@@ -30,7 +30,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
             return conexao;
         }
 
-        public static void ComandoSql(MySqlCommand camandoSql)
+        public static void ComandoCRUD(MySqlCommand camandoSql)
         {
             MySqlConnection objConexao = Conectar();
             camandoSql.Connection = objConexao;
@@ -38,11 +38,13 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
             objConexao.Close();
         }
 
-        public static MySqlDataReader Selecionar(MySqlCommand camandoSql)
+        public static MySqlDataReader Selecionar(MySqlCommand comandoSql)
         {
             MySqlConnection objConexao = Conectar();
-            camandoSql.Connection = objConexao;
-            MySqlDataReader dr = null; //new MySqlDataReader();
+            comandoSql.Connection = objConexao;
+            MySqlDataReader dr = comandoSql.ExecuteReader(
+                System.Data.CommandBehavior.CloseConnection);
+            
             return dr;
         }
     }

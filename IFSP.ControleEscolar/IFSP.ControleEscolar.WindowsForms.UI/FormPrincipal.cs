@@ -16,7 +16,7 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
     public partial class FormPrincipal : Form
     {
         public DateTime HorarioDoLogin { get; set; }
-        public Login usuarioLogado{get; set; }
+        public Login usuarioLogado;
 
         public FormPrincipal()
         {
@@ -28,7 +28,7 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
-            FormLogin frmLogin = new FormLogin();
+            FormLogin frmLogin = new FormLogin(this);
             frmLogin.ShowDialog();
 
             this.tslNomeUsuarioLogado.Text = this.usuarioLogado.Nome;
