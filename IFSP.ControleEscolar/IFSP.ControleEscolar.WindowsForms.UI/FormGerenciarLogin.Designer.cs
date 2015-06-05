@@ -36,12 +36,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.gpbLogins = new System.Windows.Forms.GroupBox();
+            this.ckbVisualizarSenha = new System.Windows.Forms.CheckBox();
             this.cmdPoderes = new System.Windows.Forms.ComboBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.dgvLogin = new System.Windows.Forms.DataGridView();
+            this.linkOK = new System.Windows.Forms.LinkLabel();
             this.gpbLogins.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLogin)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +68,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(226, 20);
             this.txtSenha.TabIndex = 2;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -105,6 +108,8 @@
             // 
             // gpbLogins
             // 
+            this.gpbLogins.Controls.Add(this.linkOK);
+            this.gpbLogins.Controls.Add(this.ckbVisualizarSenha);
             this.gpbLogins.Controls.Add(this.cmdPoderes);
             this.gpbLogins.Controls.Add(this.label1);
             this.gpbLogins.Controls.Add(this.label4);
@@ -119,6 +124,17 @@
             this.gpbLogins.TabIndex = 8;
             this.gpbLogins.TabStop = false;
             this.gpbLogins.Text = "Dados Login";
+            // 
+            // ckbVisualizarSenha
+            // 
+            this.ckbVisualizarSenha.AutoSize = true;
+            this.ckbVisualizarSenha.Location = new System.Drawing.Point(16, 177);
+            this.ckbVisualizarSenha.Name = "ckbVisualizarSenha";
+            this.ckbVisualizarSenha.Size = new System.Drawing.Size(113, 17);
+            this.ckbVisualizarSenha.TabIndex = 9;
+            this.ckbVisualizarSenha.Text = "Visualizar Senha...";
+            this.ckbVisualizarSenha.UseVisualStyleBackColor = true;
+            this.ckbVisualizarSenha.CheckedChanged += new System.EventHandler(this.ckbVisualizarSenha_CheckedChanged);
             // 
             // cmdPoderes
             // 
@@ -180,6 +196,17 @@
             this.dgvLogin.TabIndex = 13;
             this.dgvLogin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLogin_CellClick);
             // 
+            // linkOK
+            // 
+            this.linkOK.AutoSize = true;
+            this.linkOK.Location = new System.Drawing.Point(231, 177);
+            this.linkOK.Name = "linkOK";
+            this.linkOK.Size = new System.Drawing.Size(39, 13);
+            this.linkOK.TabIndex = 10;
+            this.linkOK.TabStop = true;
+            this.linkOK.Text = "Atribuir";
+            this.linkOK.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkOK_LinkClicked);
+            // 
             // FormGerenciarLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,6 +219,8 @@
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.gpbLogins);
             this.Name = "FormGerenciarLogin";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciar Login";
             this.Load += new System.EventHandler(this.FormGerenciarLogin_Load);
             this.gpbLogins.ResumeLayout(false);
@@ -217,5 +246,7 @@
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.DataGridView dgvLogin;
+        private System.Windows.Forms.CheckBox ckbVisualizarSenha;
+        private System.Windows.Forms.LinkLabel linkOK;
     }
 }

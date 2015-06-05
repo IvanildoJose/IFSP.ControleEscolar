@@ -1,1 +1,0 @@
-C:\Users\Henrique\documents\visual studio 2013\Projects\IFSP.ControleEscolar\IFSP.ControleEscolar.Console.Testes\obj\Debug\IFSP.ControleEscolar.Console.Testes.csprojResolveAssemblyReference.cache

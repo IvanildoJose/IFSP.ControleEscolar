@@ -48,7 +48,11 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
             }
             catch (Exception erro)
             {
-                MessageBox.Show("Erro: \n", "Erro..." + erro.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(
+                    "Erro: \n" + erro.Message,
+                    "Erro...",
+                    MessageBoxButtons.OK, 
+                    MessageBoxIcon.Error);
             }           
         }
 

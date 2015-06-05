@@ -7,6 +7,7 @@ C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.Control
 C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\bin\Debug\IFSP.ControleEscolar.ClassLibrary.Core.dll
 C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\bin\Debug\IFSP.ControleEscolar.ClassLibrary.Core.pdb
 C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.csprojResolveAssemblyReference.cache
+C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.FormFuncionarios.resources
 C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.FormGerenciarLogin.resources
 C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.FormLogin.resources
 C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.FormPrincipal.resources

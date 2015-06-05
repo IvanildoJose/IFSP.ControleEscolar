@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSP.ControleEscolar.ClassL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSP.ControleEscolar.WindowsForms.UI", "IFSP.ControleEscolar.WindowsForms.UI\IFSP.ControleEscolar.WindowsForms.UI.csproj", "{1B54613A-1C3D-4556-B38B-4BCE882E9B6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSP.ControleEscolar.Console.Testes", "IFSP.ControleEscolar.Console.Testes\IFSP.ControleEscolar.Console.Testes.csproj", "{07EAE0E3-9001-4497-8002-6E8F00E51F60}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{1B54613A-1C3D-4556-B38B-4BCE882E9B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B54613A-1C3D-4556-B38B-4BCE882E9B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B54613A-1C3D-4556-B38B-4BCE882E9B6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07EAE0E3-9001-4497-8002-6E8F00E51F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07EAE0E3-9001-4497-8002-6E8F00E51F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07EAE0E3-9001-4497-8002-6E8F00E51F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07EAE0E3-9001-4497-8002-6E8F00E51F60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

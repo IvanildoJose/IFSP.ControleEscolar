@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFuncionarios.Designer.cs">
+      <DependentUpon>FormFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGerenciarLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormFuncionarios.resx">
+      <DependentUpon>FormFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGerenciarLogin.resx">
       <DependentUpon>FormGerenciarLogin.cs</DependentUpon>
     </EmbeddedResource>

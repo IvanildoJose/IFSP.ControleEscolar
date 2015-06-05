@@ -67,6 +67,16 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
                 Application.Exit();
             }
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new FormGerenciarLogin().ShowDialog();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            new FormFuncionarios().ShowDialog();
+        }
     }
 
 }

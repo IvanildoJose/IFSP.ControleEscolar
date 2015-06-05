@@ -17,10 +17,19 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
     public partial class FormGerenciarLogin : Form
     {
         private LoginDao loginDao;
+        private bool chamada;
 
         public FormGerenciarLogin()
         {
             InitializeComponent();
+            this.chamada = false;
+        }
+
+        public FormGerenciarLogin(bool chamada)
+        {
+            InitializeComponent();
+
+            this.chamada = true;
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -147,6 +156,15 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
 
         private void FormGerenciarLogin_Load(object sender, EventArgs e)
         {
+            if (this.chamada == true)
+            {
+                this.linkOK.Visible = true;
+            }
+            else
+            {
+                this.linkOK.Visible = false;
+            }
+
             this.PopularGridView();
         }
 
@@ -169,6 +187,51 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
                     MessageBoxIcon.Error);
             }
 
+        }
+
+        public Login GetLoginChamada()
+        {
+            Login login = null;
+
+            if (this.chamada == true)
+            {
+                try
+                {
+                    login = this.loginDao.BuscarPorId(dgvLogin.SelectedCells[0].Value.ToString());
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show(
+                        "Erro: " + erro.Message,
+                        "Erro",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
+
+            return login;
+        }
+
+        private void ckbVisualizarSenha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckbVisualizarSenha.Checked)
+            {
+                this.txtSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                this.txtSenha.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void linkOK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (!(txtLogin.Text.Equals("") || txtLogin.Text == String.Empty))
+            {
+                this.Close();
+                return;
+            }
+            this.txtLogin.Focus();
         }
     }
 }
