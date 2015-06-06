@@ -17,11 +17,14 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
     public partial class FormLogin : Form
     {
         private Form form;
+        public bool Logado { get; private set; }
 
         public FormLogin(Form form)
         {
             InitializeComponent();
             this.form = form;
+
+            this.Logado = false;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -45,6 +48,8 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
                 
                 this.Close();
                 ((FormPrincipal)form).usuarioLogado = login;
+
+                this.Logado = true;
                 // form.Show();
             }
             catch (Exception erro)
@@ -60,6 +65,22 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
         private void FormLogin_Load(object sender, EventArgs e)
         {
             this.txtLogin.Focus();
+        }
+
+        private void txtLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.txtSenha.Focus();
+            }
+        }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogar_Click(sender, e);
+            }
         }
     }
 }

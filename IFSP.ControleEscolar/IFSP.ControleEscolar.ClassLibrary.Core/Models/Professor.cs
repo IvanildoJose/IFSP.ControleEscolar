@@ -16,11 +16,11 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.Models
         public String Telefone { get; set; }
         public String Email { get; set; }
 
-        public Login FuncionarioLogin { get; set; }
+        public Login ProfessorLogin { get; set; }
 
         public Professor()
         {
-            this.FuncionarioLogin = new Login();
+            this.ProfessorLogin = new Login();
         }
     }
 }

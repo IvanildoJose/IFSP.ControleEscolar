@@ -16,7 +16,16 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPrincipal());
+
+            FormPrincipal formPrincipal = new FormPrincipal();
+            FormLogin formLogin = new FormLogin(formPrincipal);
+
+            formLogin.ShowDialog();
+
+            if (formLogin.Logado == true)
+            {
+                Application.Run(formPrincipal);
+            }
         }
     }
 }

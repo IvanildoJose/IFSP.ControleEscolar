@@ -165,5 +165,10 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
                     MessageBoxIcon.Error);
             }
         }
+
+        private void dgvDados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -179,6 +179,7 @@
             this.dgvDados.Size = new System.Drawing.Size(532, 225);
             this.dgvDados.TabIndex = 5;
             this.dgvDados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDados_CellClick);
+            this.dgvDados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDados_CellContentClick);
             // 
             // FormFuncionarios
             // 

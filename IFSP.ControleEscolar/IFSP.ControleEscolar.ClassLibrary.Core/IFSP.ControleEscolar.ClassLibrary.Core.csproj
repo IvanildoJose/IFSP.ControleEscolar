@@ -44,6 +44,7 @@
     <Compile Include="DataAccessObjects\IDao.cs" />
     <Compile Include="DataAccessObjects\LoginDao.cs" />
     <Compile Include="DataAccessObjects\MysqlConexao.cs" />
+    <Compile Include="DataAccessObjects\ProfessorDao.cs" />
     <Compile Include="Models\Aluno.cs" />
     <Compile Include="Models\AlunoTurma.cs" />
     <Compile Include="Models\Curso.cs" />

@@ -30,8 +30,8 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
             // this.Hide();
-            FormLogin frmLogin = new FormLogin(this);
-            frmLogin.ShowDialog();
+            // FormLogin frmLogin = new FormLogin(this);
+            // frmLogin.ShowDialog();
 
             this.tslNomeUsuarioLogado.Text = this.usuarioLogado.Nome;
             this.HorarioDoLogin = DateTime.Now;
@@ -78,6 +78,11 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             new FormFuncionarios().ShowDialog();
+        }
+
+        private void professoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FormProfessor().ShowDialog();
         }
     }
 

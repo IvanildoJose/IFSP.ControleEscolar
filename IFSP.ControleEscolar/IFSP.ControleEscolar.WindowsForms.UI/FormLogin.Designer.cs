@@ -45,6 +45,7 @@
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(162, 20);
             this.txtLogin.TabIndex = 0;
+            this.txtLogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLogin_KeyDown);
             // 
             // txtSenha
             // 
@@ -53,6 +54,7 @@
             this.txtSenha.Size = new System.Drawing.Size(161, 20);
             this.txtSenha.TabIndex = 1;
             this.txtSenha.UseSystemPasswordChar = true;
+            this.txtSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyDown);
             // 
             // label1
             // 
