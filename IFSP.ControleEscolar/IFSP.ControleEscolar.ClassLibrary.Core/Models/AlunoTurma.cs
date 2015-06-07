@@ -10,5 +10,11 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.Models
     {
         public Aluno AlunoAtrib { get; set; }
         public Turma TurmaAtrib { get; set; }
+
+        public AlunoTurma()
+        {
+            this.AlunoAtrib = new Aluno();
+            this.TurmaAtrib = new Turma();
+        }
     }
 }

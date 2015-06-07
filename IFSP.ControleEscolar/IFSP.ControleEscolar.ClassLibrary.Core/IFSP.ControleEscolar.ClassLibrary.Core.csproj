@@ -40,12 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessObjects\CursoDisciplinaDao.cs" />
     <Compile Include="DataAccessObjects\DisciplinaProfessorDao.cs" />
     <Compile Include="DataAccessObjects\FuncionarioDao.cs" />
     <Compile Include="DataAccessObjects\IDao.cs" />
     <Compile Include="DataAccessObjects\LoginDao.cs" />
     <Compile Include="DataAccessObjects\MysqlConexao.cs" />
     <Compile Include="DataAccessObjects\ProfessorDao.cs" />
+    <Compile Include="DataAccessObjects\TurmaDisciplinaDao.cs" />
     <Compile Include="Models\Aluno.cs" />
     <Compile Include="Models\AlunoTurma.cs" />
     <Compile Include="Models\Curso.cs" />
