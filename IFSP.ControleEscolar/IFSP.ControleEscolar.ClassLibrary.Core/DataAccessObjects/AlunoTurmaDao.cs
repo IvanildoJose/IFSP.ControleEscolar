@@ -25,7 +25,6 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
 
             comando.Parameters.AddWithValue("@tbl_aluno_alu_id", obj.AlunoAtrib.Id);
             comando.Parameters.AddWithValue("@tbl_turma_tur_id", obj.TurmaAtrib.Id);
-
             MysqlConexao.ComandoCRUD(comando);
         }
 
