@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessObjects\AlunoTurmaDao.cs" />
     <Compile Include="DataAccessObjects\CursoDisciplinaDao.cs" />
     <Compile Include="DataAccessObjects\DisciplinaProfessorDao.cs" />
     <Compile Include="DataAccessObjects\FuncionarioDao.cs" />
