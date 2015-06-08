@@ -14,39 +14,46 @@ using IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects;
 
 namespace IFSP.ControleEscolar.WindowsForms.UI
 {
-    public partial class FormAluno : Form
+    public partial class FormTurma : Form
     {
-        private CursoDao cursoDao;
-        private AlunoDao alunoDao;
+        private TurmaDao turmaDao;
 
-        public FormAluno()
+        public FormTurma()
         {
             InitializeComponent();
 
-            this.alunoDao = new AlunoDao();
-            this.cursoDao = new CursoDao();
+            this.turmaDao = new TurmaDao();
         }
 
-        private void FormAluno_Load(object sender, EventArgs e)
+        private void FormTurma_Load(object sender, EventArgs e)
         {
-            this.CarregarComboxCursos();
             this.CarregarGrid();
-
             this.LimparCampos();
+
         }
 
-        private void CarregarComboxCursos()
+        private void LimparCampos()
         {
-            cmbCursos.DataSource = cursoDao.BuscarTodos();
-            cmbCursos.ValueMember = "Id";
-            cmbCursos.DisplayMember = "Nome";
+            foreach (var item in gpbDados.Controls)
+            {
+                if (item is TextBox)
+                {
+                    (item as TextBox).Clear();
+                }
+                else if (item is ComboBox)
+                {
+                    (item as ComboBox).Text = "";
+                }
+            }
+
+            this.lblNumeroTurma.Focus();
         }
 
         private void CarregarGrid()
         {
             try
             {
-                this.dgvDados.DataSource = this.alunoDao.BuscarTodos();
+                this.dgvDados.DataSource = this.turmaDao.BuscarTodos();
             }
             catch (Exception erro)
             {
@@ -58,42 +65,16 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
             }
         }
 
-        private void btnLimpar_Click(object sender, EventArgs e)
-        {
-            this.LimparCampos();
-        }
-
-        private void LimparCampos()
-        {
-            foreach (var item in gpbDados.Controls)
-            {
-                if (item is TextBox)
-                {
-                    ((TextBox)item).Clear();
-                }
-                else if (item is ComboBox)
-                {
-                    ((ComboBox)item).Text = "" ;
-                }
-            }
-            this.txtNome.Focus();
-        }
-
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            Aluno a = new Aluno();
+            Turma t = new Turma();
 
             try
             {
-                a.Nome = txtNome.Text;
-                a.Prontuario = txtProntuario.Text;
-                a.Endereco = txtEnd.Text;
-                a.CPF = txtCPF.Text;
-                a.Telefone = txtTel.Text;
-                a.Email = txtEmail.Text;
-                a.Curso = cmbCursos.Text;
+                // t.Id = Convert.ToInt32(tbxIdTurma.Text);
+                t.Numero = tbxNumTurma.Text;
 
-                this.alunoDao.Inserir(a);
+                this.turmaDao.Inserir(t);
                 MessageBox.Show("Cadastrado!");
                 this.LimparCampos();
                 this.CarregarGrid();
@@ -110,20 +91,14 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            Aluno a = new Aluno();
-           
+            Turma t = new Turma();
+
             try
             {
-                a.Id = Convert.ToInt32(txtId.Text);
-                a.Nome = txtNome.Text;
-                a.Prontuario = txtProntuario.Text;
-                a.Endereco = txtEnd.Text;
-                a.CPF = txtCPF.Text;
-                a.Telefone = txtTel.Text;
-                a.Email = txtEmail.Text;
-                a.Curso = cmbCursos.Text;
+                t.Id = Convert.ToInt32(tbxIdTurma.Text);
+                t.Numero = tbxNumTurma.Text;
 
-                this.alunoDao.Alterar(a);
+                this.turmaDao.Alterar(t);
                 MessageBox.Show("Alterado!");
                 this.LimparCampos();
                 this.CarregarGrid();
@@ -140,21 +115,14 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            Aluno a = new Aluno();
+            Turma t = new Turma();
 
             try
             {
-                a.Nome = txtNome.Text;
-                a.Prontuario = txtProntuario.Text;
-                a.Endereco = txtEnd.Text;
-                a.CPF = txtCPF.Text;
-                a.Telefone = txtTel.Text;
-                a.Email = txtEmail.Text;
-                a.Curso = cmbCursos.Text;
+                t.Id = Convert.ToInt32(tbxIdTurma.Text);
+                t.Numero = tbxNumTurma.Text;
 
-                a.Id = Convert.ToInt32(txtId.Text);
-
-                this.alunoDao.Deletar(a);
+                this.turmaDao.Deletar(t);
                 MessageBox.Show("Deletado!");
                 this.LimparCampos();
                 this.CarregarGrid();
@@ -169,21 +137,20 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
             }
         }
 
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            this.LimparCampos();
+        }
+
         private void dgvDados_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
-                Aluno a = this.alunoDao.BuscarPorId(
+                Turma p = this.turmaDao.BuscarPorId(
                     Convert.ToInt32(dgvDados.SelectedCells[0].Value));
 
-                this.txtId.Text = a.Id.ToString();
-                this.txtNome.Text = a.Nome;
-                this.txtProntuario.Text = a.Prontuario;
-                this.txtEnd.Text = a.Endereco;
-                this.txtCPF.Text = a.CPF;
-                this.txtTel.Text = a.Telefone;
-                this.txtEmail.Text = a.Email;
-                this.cmbCursos.Text = a.Curso;
+                this.tbxIdTurma.Text = p.Id.ToString();
+                this.tbxNumTurma.Text = p.Numero;
                 
             }
             catch (Exception erro)

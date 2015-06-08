@@ -20,7 +20,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
             MySqlCommand comando = new MySqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText =
-                "INSERT INTO tbl_turma(tur_id, tur_numero) VALUES (@tur_id, @tur_numero)";
+                "INSERT INTO tbl_turma(tur_numero) VALUES (@tur_numero)";
 
             comando.Parameters.AddWithValue("@tur_numero", obj.Numero);
 

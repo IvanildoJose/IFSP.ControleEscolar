@@ -41,15 +41,16 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             Professor p = new Professor();
-            p.Nome = txtNome.Text;
-            p.Pronturario = txtProntuario.Text;
-            p.Endereco = txtEnd.Text;
-            p.CPF = txtCpf.Text;
-            p.Telefone = txtTel.Text;
-            p.Email = txtEmail.Text;
-
+            
             try
             {
+                p.Nome = txtNome.Text;
+                p.Pronturario = txtProntuario.Text;
+                p.Endereco = txtEnd.Text;
+                p.CPF = txtCpf.Text;
+                p.Telefone = txtTel.Text;
+                p.Email = txtEmail.Text;
+
                 p.ProfessorLogin = new LoginDao().BuscarPorId(lblLogin.Text);
 
 
@@ -162,6 +163,7 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
         private void FormProfessor_Load(object sender, EventArgs e)
         {
             this.CarregarGrid();
+            this.LimparCampos();
         }
 
         private void dgvDados_CellClick(object sender, DataGridViewCellEventArgs e)

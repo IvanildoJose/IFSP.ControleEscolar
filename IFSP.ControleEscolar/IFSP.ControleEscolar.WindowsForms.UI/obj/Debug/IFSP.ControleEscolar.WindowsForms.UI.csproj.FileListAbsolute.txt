@@ -19,3 +19,5 @@ C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.Control
 C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.FormDisciplina.resources
 C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.exe
 C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.pdb
+C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.FormGrade.resources
+C:\dados\Projetos_Git_Hub\IFSP.ControleEscolar\IFSP.ControleEscolar\IFSP.ControleEscolar.WindowsForms.UI\obj\Debug\IFSP.ControleEscolar.WindowsForms.UI.FormTurma.resources

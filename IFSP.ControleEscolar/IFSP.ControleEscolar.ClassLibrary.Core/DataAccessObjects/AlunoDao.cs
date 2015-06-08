@@ -21,8 +21,8 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText =
                 "INSERT INTO tbl_aluno " +
-                "(alu_nome, alu_prontuario, alu_endereco, alu_cpf, alu_telefone, alu_email) " +
-                "VALUES (@alu_nome, @alu_prontuario, @alu_endereco, @alu_cpf, @alu_telefone, @alu_email)";
+                "(alu_nome, alu_prontuario, alu_endereco, alu_cpf, alu_telefone, alu_email, curso) " +
+                "VALUES (@alu_nome, @alu_prontuario, @alu_endereco, @alu_cpf, @alu_telefone, @alu_email, @curso)";
 
             comando.Parameters.AddWithValue("@alu_nome", obj.Nome);
             comando.Parameters.AddWithValue("@alu_prontuario", obj.Prontuario);
@@ -30,7 +30,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
             comando.Parameters.AddWithValue("@alu_cpf", obj.CPF);
             comando.Parameters.AddWithValue("@alu_telefone", obj.Telefone);
             comando.Parameters.AddWithValue("@alu_email", obj.Email);
-            
+            comando.Parameters.AddWithValue("@curso", obj.Curso);
 
             MysqlConexao.ComandoCRUD(comando);
         }
@@ -47,7 +47,8 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
                 "alu_endereco=@alu_endereco,"+
                 "alu_cpf=@alu_cpf,"+
                 "alu_telefone=@alu_telefone," +
-                "alu_email=@alu_email " +
+                "alu_email=@alu_email," +
+                "curso=@curso " +
                 "WHERE alu_id=@alu_id";
 
             comando.Parameters.AddWithValue("@alu_id", obj.Id);
@@ -57,6 +58,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
             comando.Parameters.AddWithValue("@alu_cpf", obj.CPF);
             comando.Parameters.AddWithValue("@alu_telefone", obj.Telefone);
             comando.Parameters.AddWithValue("@alu_email", obj.Email);
+            comando.Parameters.AddWithValue("@curso", obj.Curso);
 
             MysqlConexao.ComandoCRUD(comando);
         }
@@ -78,7 +80,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
             MySqlCommand comando = new MySqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText =
-                "SELECT alu_id, alu_nome, alu_prontuario, alu_endereco, alu_cpf, alu_telefone, alu_email FROM tbl_aluno WHERE 1 alu_id=@alu_id";
+                "SELECT alu_id, alu_nome, alu_prontuario, alu_endereco, alu_cpf, alu_telefone, alu_email, curso FROM tbl_aluno WHERE alu_id=@alu_id";
 
             comando.Parameters.AddWithValue("@alu_id", id);
 
@@ -96,7 +98,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
                 temp.CPF = Convert.ToString(dr["alu_cpf"]);
                 temp.Telefone = Convert.ToString(dr["alu_telefone"]);
                 temp.Email = Convert.ToString(dr["alu_email"]);
-                
+                temp.Curso = Convert.ToString(dr["curso"]);
             }
             else
             {
@@ -111,7 +113,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
             List<Aluno> lista = new List<Aluno>();
             MySqlCommand comando = new MySqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
-            comando.CommandText = "SELECT alu_id, alu_nome, alu_prontuario, alu_endereco, alu_cpf, alu_telefone, alu_email FROM tbl_aluno";
+            comando.CommandText = "SELECT alu_id, alu_nome, alu_prontuario, alu_endereco, alu_cpf, alu_telefone, alu_email, curso FROM tbl_aluno";
 
             MySqlDataReader dr = MysqlConexao.Selecionar(comando);
 
@@ -127,6 +129,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
                     temp.CPF = Convert.ToString(dr["alu_cpf"]);
                     temp.Telefone = Convert.ToString(dr["alu_telefone"]);
                     temp.Email = Convert.ToString(dr["alu_email"]);
+                    temp.Curso = Convert.ToString(dr["curso"]);
 
                     lista.Add(temp);
                 }

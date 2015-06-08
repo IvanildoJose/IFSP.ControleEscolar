@@ -15,6 +15,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.Models
         public String CPF { get; set; }
         public String Telefone { get; set; }
         public String Email { get; set; }
+        public String Curso { get; set; }
 
         public override string ToString()
         {
