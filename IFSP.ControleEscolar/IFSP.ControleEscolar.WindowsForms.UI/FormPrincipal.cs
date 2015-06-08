@@ -94,6 +94,11 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
         {
             new FormCurso().ShowDialog();
         }
+
+        private void disciplinasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FormDisciplina().ShowDialog();
+        }
     }
 
 }

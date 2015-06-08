@@ -8,28 +8,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//
 using IFSP.ControleEscolar.ClassLibrary.Core.Models;
 using IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects;
 
 namespace IFSP.ControleEscolar.WindowsForms.UI
 {
-    public partial class Disciplina : Form
+    public partial class FormDisciplina : Form
     {
         private DisciplinaDao disciplinaDao;
 
-        public Disciplina()
+        public FormDisciplina()
         {
             InitializeComponent();
 
             this.disciplinaDao = new DisciplinaDao();
         }
 
+        private void FormDisciplina_Load(object sender, EventArgs e)
+        {
+            this.CarregarGrid();
+        }
+
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             Disciplina d = new Disciplina();
+
             d.Sigla = txtSigla.Text;
-            d.Name = txtNomeDisc.Text;
+            d.Nome = txtNomeDisc.Text;
 
             try
             {
@@ -77,7 +82,7 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
                     ((ComboBox)item).Text = "";
                 }
             }
-            txtNome.Focus();
+            txtSigla.Focus();
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
@@ -85,7 +90,7 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
             Disciplina d = new Disciplina();
             d.Id = Convert.ToInt32(txtId.Text);
             d.Sigla = txtSigla.Text;
-            d.Name = txtNomeDisc.Text;
+            d.Nome = txtNomeDisc.Text;
 
             try
             {
@@ -109,11 +114,11 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
             Disciplina d = new Disciplina();
             d.Id = Convert.ToInt32(txtId.Text);
             d.Sigla = txtSigla.Text;
-            d.Name = txtNomeDisc.Text;
+            d.Nome = txtNomeDisc.Text;
 
             try
             {
-                this.disciplinaDao.Excluir(d);
+                this.disciplinaDao.Deletar(d);
                 MessageBox.Show("Excluido!");
                 this.LimparCampos();
                 this.CarregarGrid();
@@ -133,11 +138,6 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
             this.LimparCampos();
         }
 
-        private void Disciplina_Load(object sender, EventArgs e)
-        {
-            this.CarregarGrid();
-        }
-
         private void dgvDados_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -145,9 +145,9 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
                 Disciplina d = this.disciplinaDao.BuscarPorId(
                     Convert.ToInt32(dgvDados.SelectedCells[0].Value));
 
-                txtId.Text = d.Id;
+                txtId.Text = d.Id.ToString();
                 txtSigla.Text = d.Sigla;
-                txtNomeDisc.Tex = d.Name;
+                txtNomeDisc.Text = d.Nome;
             }
             catch (Exception erro)
             {
@@ -158,5 +158,7 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
                     MessageBoxIcon.Error);
             }
         }
+
+
     }
 }

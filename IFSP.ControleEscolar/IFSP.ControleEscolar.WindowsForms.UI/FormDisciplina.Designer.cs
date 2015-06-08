@@ -1,6 +1,6 @@
 ﻿namespace IFSP.ControleEscolar.WindowsForms.UI
 {
-    partial class Disciplina
+    partial class FormDisciplina
     {
         /// <summary>
         /// Required designer variable.
@@ -55,7 +55,7 @@
             this.gpbDados.Location = new System.Drawing.Point(12, 12);
             this.gpbDados.Name = "gpbDados";
             this.gpbDados.Size = new System.Drawing.Size(468, 186);
-            this.gpbDados.TabIndex = 0;
+            this.gpbDados.TabIndex = 22;
             this.gpbDados.TabStop = false;
             this.gpbDados.Text = "Dados";
             // 
@@ -78,6 +78,7 @@
             // 
             this.txtId.Location = new System.Drawing.Point(122, 37);
             this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(62, 20);
             this.txtId.TabIndex = 9;
             // 
@@ -114,7 +115,7 @@
             this.dgvDados.Location = new System.Drawing.Point(11, 245);
             this.dgvDados.Name = "dgvDados";
             this.dgvDados.Size = new System.Drawing.Size(474, 191);
-            this.dgvDados.TabIndex = 21;
+            this.dgvDados.TabIndex = 27;
             this.dgvDados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDados_CellClick);
             // 
             // btnCadastrar
@@ -122,7 +123,7 @@
             this.btnCadastrar.Location = new System.Drawing.Point(7, 204);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCadastrar.TabIndex = 20;
+            this.btnCadastrar.TabIndex = 26;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -132,7 +133,7 @@
             this.btnExcluir.Location = new System.Drawing.Point(178, 204);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 19;
+            this.btnExcluir.TabIndex = 25;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -142,7 +143,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(263, 204);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpar.TabIndex = 18;
+            this.btnLimpar.TabIndex = 24;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -152,25 +153,28 @@
             this.btnAtualizar.Location = new System.Drawing.Point(94, 204);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnAtualizar.TabIndex = 17;
+            this.btnAtualizar.TabIndex = 23;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
-            // Disciplina
+            // FormDisciplina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 448);
+            this.ClientSize = new System.Drawing.Size(501, 452);
+            this.Controls.Add(this.gpbDados);
             this.Controls.Add(this.dgvDados);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnAtualizar);
-            this.Controls.Add(this.gpbDados);
-            this.Name = "Disciplina";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "FormDisciplina";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDisciplina";
-            this.Load += new System.EventHandler(this.Disciplina_Load);
+            this.Load += new System.EventHandler(this.FormDisciplina_Load);
             this.gpbDados.ResumeLayout(false);
             this.gpbDados.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();

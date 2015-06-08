@@ -40,13 +40,14 @@
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.professoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tslUsuarioLogado = new System.Windows.Forms.ToolStripStatusLabel();
             this.tslNomeUsuarioLogado = new System.Windows.Forms.ToolStripStatusLabel();
             this.tslHorarioEntradaSistema = new System.Windows.Forms.ToolStripStatusLabel();
             this.stpBarradeStatus = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disciplinasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.stpBarradeStatus.SuspendLayout();
             this.SuspendLayout();
@@ -135,10 +136,18 @@
             // cursosToolStripMenuItem
             // 
             this.cursosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarToolStripMenuItem});
+            this.cadastrarToolStripMenuItem,
+            this.disciplinasToolStripMenuItem});
             this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
             this.cursosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.cursosToolStripMenuItem.Text = "Cursos";
+            // 
+            // cadastrarToolStripMenuItem
+            // 
+            this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
+            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cadastrarToolStripMenuItem.Text = "Cadastrar";
+            this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem
             // 
@@ -185,12 +194,12 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(10, 17);
             this.toolStripStatusLabel1.Text = "|";
             // 
-            // cadastrarToolStripMenuItem
+            // disciplinasToolStripMenuItem
             // 
-            this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cadastrarToolStripMenuItem.Text = "Cadastrar";
-            this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
+            this.disciplinasToolStripMenuItem.Name = "disciplinasToolStripMenuItem";
+            this.disciplinasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.disciplinasToolStripMenuItem.Text = "Disciplinas";
+            this.disciplinasToolStripMenuItem.Click += new System.EventHandler(this.disciplinasToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -235,5 +244,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem disciplinasToolStripMenuItem;
     }
 }
