@@ -35,36 +35,38 @@
             this.lblCpf = new System.Windows.Forms.Label();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtProntuario = new System.Windows.Forms.TextBox();
+            this.txtEnd = new System.Windows.Forms.TextBox();
+            this.txtCPF = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblAlunoCurso = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmbCursos = new System.Windows.Forms.ComboBox();
+            this.dgvDados = new System.Windows.Forms.DataGridView();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gpbDados = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
+            this.gpbDados.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblIdAluno
             // 
             this.lblIdAluno.AutoSize = true;
-            this.lblIdAluno.Location = new System.Drawing.Point(26, 37);
+            this.lblIdAluno.Location = new System.Drawing.Point(17, 23);
             this.lblIdAluno.Name = "lblIdAluno";
-            this.lblIdAluno.Size = new System.Drawing.Size(51, 13);
+            this.lblIdAluno.Size = new System.Drawing.Size(21, 13);
             this.lblIdAluno.TabIndex = 0;
-            this.lblIdAluno.Text = "ID Aluno:";
+            this.lblIdAluno.Text = "ID:";
             // 
             // lblNomeAluno
             // 
             this.lblNomeAluno.AutoSize = true;
-            this.lblNomeAluno.Location = new System.Drawing.Point(189, 37);
+            this.lblNomeAluno.Location = new System.Drawing.Point(17, 62);
             this.lblNomeAluno.Name = "lblNomeAluno";
             this.lblNomeAluno.Size = new System.Drawing.Size(83, 13);
             this.lblNomeAluno.TabIndex = 1;
@@ -73,7 +75,7 @@
             // lblProntuário
             // 
             this.lblProntuário.AutoSize = true;
-            this.lblProntuário.Location = new System.Drawing.Point(26, 77);
+            this.lblProntuário.Location = new System.Drawing.Point(17, 116);
             this.lblProntuário.Name = "lblProntuário";
             this.lblProntuário.Size = new System.Drawing.Size(58, 13);
             this.lblProntuário.TabIndex = 2;
@@ -82,7 +84,7 @@
             // lblEndereco
             // 
             this.lblEndereco.AutoSize = true;
-            this.lblEndereco.Location = new System.Drawing.Point(26, 127);
+            this.lblEndereco.Location = new System.Drawing.Point(19, 163);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(56, 13);
             this.lblEndereco.TabIndex = 3;
@@ -91,7 +93,7 @@
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
-            this.lblCpf.Location = new System.Drawing.Point(26, 177);
+            this.lblCpf.Location = new System.Drawing.Point(19, 248);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(30, 13);
             this.lblCpf.TabIndex = 4;
@@ -100,7 +102,7 @@
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(270, 177);
+            this.lblTelefone.Location = new System.Drawing.Point(17, 290);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(52, 13);
             this.lblTelefone.TabIndex = 5;
@@ -109,89 +111,90 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(26, 227);
+            this.lblEmail.Location = new System.Drawing.Point(19, 326);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.TabIndex = 6;
             this.lblEmail.Text = "Email:";
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Location = new System.Drawing.Point(78, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtId.Location = new System.Drawing.Point(125, 16);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 7;
             // 
-            // textBox2
+            // txtNome
             // 
-            this.textBox2.Location = new System.Drawing.Point(273, 34);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(289, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtNome.Location = new System.Drawing.Point(125, 55);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(289, 20);
+            this.txtNome.TabIndex = 8;
             // 
-            // textBox3
+            // txtProntuario
             // 
-            this.textBox3.Location = new System.Drawing.Point(90, 73);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtProntuario.Location = new System.Drawing.Point(125, 109);
+            this.txtProntuario.Name = "txtProntuario";
+            this.txtProntuario.Size = new System.Drawing.Size(232, 20);
+            this.txtProntuario.TabIndex = 9;
             // 
-            // textBox4
+            // txtEnd
             // 
-            this.textBox4.Location = new System.Drawing.Point(80, 124);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(395, 20);
-            this.textBox4.TabIndex = 10;
+            this.txtEnd.Location = new System.Drawing.Point(125, 163);
+            this.txtEnd.Multiline = true;
+            this.txtEnd.Name = "txtEnd";
+            this.txtEnd.Size = new System.Drawing.Size(392, 58);
+            this.txtEnd.TabIndex = 10;
             // 
-            // textBox5
+            // txtCPF
             // 
-            this.textBox5.Location = new System.Drawing.Point(57, 174);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(185, 20);
-            this.textBox5.TabIndex = 11;
+            this.txtCPF.Location = new System.Drawing.Point(125, 241);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(185, 20);
+            this.txtCPF.TabIndex = 11;
             // 
-            // textBox6
+            // txtTel
             // 
-            this.textBox6.Location = new System.Drawing.Point(326, 174);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(149, 20);
-            this.textBox6.TabIndex = 12;
+            this.txtTel.Location = new System.Drawing.Point(125, 283);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(185, 20);
+            this.txtTel.TabIndex = 12;
             // 
-            // textBox7
+            // txtEmail
             // 
-            this.textBox7.Location = new System.Drawing.Point(66, 224);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(256, 20);
-            this.textBox7.TabIndex = 13;
+            this.txtEmail.Location = new System.Drawing.Point(125, 319);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(392, 20);
+            this.txtEmail.TabIndex = 13;
             // 
             // lblAlunoCurso
             // 
             this.lblAlunoCurso.AutoSize = true;
-            this.lblAlunoCurso.Location = new System.Drawing.Point(26, 273);
+            this.lblAlunoCurso.Location = new System.Drawing.Point(19, 368);
             this.lblAlunoCurso.Name = "lblAlunoCurso";
             this.lblAlunoCurso.Size = new System.Drawing.Size(37, 13);
             this.lblAlunoCurso.TabIndex = 15;
             this.lblAlunoCurso.Text = "Curso:";
             // 
-            // comboBox1
+            // cmbCursos
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(66, 265);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(409, 21);
-            this.comboBox1.TabIndex = 16;
+            this.cmbCursos.FormattingEnabled = true;
+            this.cmbCursos.Location = new System.Drawing.Point(124, 360);
+            this.cmbCursos.Name = "cmbCursos";
+            this.cmbCursos.Size = new System.Drawing.Size(186, 21);
+            this.cmbCursos.TabIndex = 16;
             // 
-            // dataGridView1
+            // dgvDados
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 332);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(533, 180);
-            this.dataGridView1.TabIndex = 21;
+            this.dgvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDados.Location = new System.Drawing.Point(12, 461);
+            this.dgvDados.Name = "dgvDados";
+            this.dgvDados.Size = new System.Drawing.Size(533, 158);
+            this.dgvDados.TabIndex = 21;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(30, 296);
+            this.btnCadastrar.Location = new System.Drawing.Point(12, 421);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 20;
@@ -200,7 +203,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(201, 296);
+            this.btnExcluir.Location = new System.Drawing.Point(247, 421);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
             this.btnExcluir.TabIndex = 19;
@@ -209,7 +212,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(286, 296);
+            this.btnLimpar.Location = new System.Drawing.Point(367, 421);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 18;
@@ -218,44 +221,57 @@
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(115, 296);
+            this.btnAtualizar.Location = new System.Drawing.Point(136, 421);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
             this.btnAtualizar.TabIndex = 17;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
             // 
+            // gpbDados
+            // 
+            this.gpbDados.Controls.Add(this.lblIdAluno);
+            this.gpbDados.Controls.Add(this.txtId);
+            this.gpbDados.Controls.Add(this.lblNomeAluno);
+            this.gpbDados.Controls.Add(this.txtNome);
+            this.gpbDados.Controls.Add(this.lblProntuário);
+            this.gpbDados.Controls.Add(this.lblEndereco);
+            this.gpbDados.Controls.Add(this.cmbCursos);
+            this.gpbDados.Controls.Add(this.lblCpf);
+            this.gpbDados.Controls.Add(this.lblAlunoCurso);
+            this.gpbDados.Controls.Add(this.lblTelefone);
+            this.gpbDados.Controls.Add(this.txtEmail);
+            this.gpbDados.Controls.Add(this.lblEmail);
+            this.gpbDados.Controls.Add(this.txtTel);
+            this.gpbDados.Controls.Add(this.txtProntuario);
+            this.gpbDados.Controls.Add(this.txtCPF);
+            this.gpbDados.Controls.Add(this.txtEnd);
+            this.gpbDados.Location = new System.Drawing.Point(12, 12);
+            this.gpbDados.Name = "gpbDados";
+            this.gpbDados.Size = new System.Drawing.Size(539, 403);
+            this.gpbDados.TabIndex = 22;
+            this.gpbDados.TabStop = false;
+            this.gpbDados.Text = "Dados";
+            // 
             // FormAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 527);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(566, 631);
+            this.Controls.Add(this.gpbDados);
+            this.Controls.Add(this.dgvDados);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnAtualizar);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.lblAlunoCurso);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblTelefone);
-            this.Controls.Add(this.lblCpf);
-            this.Controls.Add(this.lblEndereco);
-            this.Controls.Add(this.lblProntuário);
-            this.Controls.Add(this.lblNomeAluno);
-            this.Controls.Add(this.lblIdAluno);
             this.Name = "FormAluno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Alunos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormAluno_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();
+            this.gpbDados.ResumeLayout(false);
+            this.gpbDados.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -268,19 +284,20 @@
         private System.Windows.Forms.Label lblCpf;
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtProntuario;
+        private System.Windows.Forms.TextBox txtEnd;
+        private System.Windows.Forms.TextBox txtCPF;
+        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblAlunoCurso;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cmbCursos;
+        private System.Windows.Forms.DataGridView dgvDados;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnAtualizar;
+        private System.Windows.Forms.GroupBox gpbDados;
     }
 }

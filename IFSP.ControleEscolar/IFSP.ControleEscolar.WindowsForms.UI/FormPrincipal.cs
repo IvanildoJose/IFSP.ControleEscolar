@@ -84,6 +84,16 @@ namespace IFSP.ControleEscolar.WindowsForms.UI
         {
             new FormProfessor().ShowDialog();
         }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FormAluno().ShowDialog();
+        }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FormCurso().ShowDialog();
+        }
     }
 
 }

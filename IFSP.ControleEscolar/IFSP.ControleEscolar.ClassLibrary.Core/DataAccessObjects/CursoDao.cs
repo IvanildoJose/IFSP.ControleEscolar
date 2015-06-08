@@ -37,7 +37,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
             comando.CommandText =
                 "UPDATE tbl_curso " +
                 "SET " +
-                "cur_nome=@cur_nome, cur_duracao=@cur_duracao, cur_periodo=cur_periodo " +
+                "cur_nome=@cur_nome, cur_duracao=@cur_duracao, cur_periodo=@cur_periodo " +
                 "WHERE cur_id=@cur_id";
 
             comando.Parameters.AddWithValue("@cur_id", obj.Id);
@@ -67,7 +67,7 @@ namespace IFSP.ControleEscolar.ClassLibrary.Core.DataAccessObjects
             comando.CommandText =
                 "SELECT cur_id, cur_nome, cur_duracao, cur_periodo FROM tbl_curso WHERE cur_id=@cur_id";
 
-            comando.Parameters.AddWithValue("@dis_id", id);
+            comando.Parameters.AddWithValue("@cur_id", id);
 
             MySqlDataReader dr = MysqlConexao.Selecionar(comando);
 
